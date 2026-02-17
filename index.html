@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zarif's Blog</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html">Zarif's Blog</a>
+
+        <nav class="navlinks">
+          <a href="#" id="navCategories">Kategoriyalar</a>
+          <a href="#">Biz Haqimizda</a>
+          <a href="#">Biz Bilan Bo'laning</a>
+        </nav>
+
+        <div class="navright">
+          <form class="search" id="searchForm">
+            <span>🔎</span>
+            <input id="searchInput" type="search" placeholder="Qidirin" />
+          </form>
+
+          <button class="iconbtn" title="Profile">👤</button>
+
+          <div class="switch" title="Dark mode">
+            <span>🌙</span>
+            <div class="toggle" id="themeToggle" aria-label="toggle theme"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-cats">
+        <div class="chips" id="categoryChips"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2 class="h2">Oxirgi blog postlari</h2>
+
+      <div class="featured" id="featuredWrap">
+        <!-- filled by JS -->
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="h2">Barcha blog postlari</h2>
+      <div class="grid" id="postsGrid"></div>
+
+      <div class="pagination">
+        <div class="pnav" id="prevBtn">← Previous</div>
+        <div class="pnums" id="pageNums"></div>
+        <div class="pnav" id="nextBtn">Next →</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="brand">Zarif's Blog</div>
+        <div class="footer-links">
+          <a href="#">About Studio</a>
+          <a href="#">Archive</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>Toshkent Uzbekistan</div>
+        <div>© 2024, All Rights Reserved</div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Post detail — Zarif's Blog</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html">Zarif's Blog</a>
+
+        <nav class="navlinks">
+          <a href="index.html">Bosh sahifa</a>
+          <a href="#">Biz Haqimizda</a>
+          <a href="#">Biz Bilan Bo'laning</a>
+        </nav>
+
+        <div class="navright">
+          <form class="search" id="searchForm">
+            <span>🔎</span>
+            <input id="searchInput" type="search" placeholder="Qidirin" />
+          </form>
+
+          <button class="iconbtn" title="Profile">👤</button>
+
+          <div class="switch" title="Dark mode">
+            <span>🌙</span>
+            <div class="toggle" id="themeToggle" aria-label="toggle theme"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="breadcrumb" id="breadcrumb"></div>
+
+    <section class="section">
+      <div class="detail-hero">
+        <article class="card" id="detailCard"></article>
+
+        <aside class="side">
+          <div class="card">
+            <div class="card-body">
+              <div class="meta">📌 Shu mavzuda postlar</div>
+              <div class="desc" style="margin-top:6px">Pastda shu kategoriya bo‘yicha postlar chiqadi.</div>
+            </div>
+          </div>
+
+          <div class="side" id="relatedWrap"></div>
+        </aside>
+      </div>
+
+      <hr class="hr"/>
+
+      <h2 class="h2">Related postlar</h2>
+      <div class="grid" id="relatedGrid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="brand">Zarif's Blog</div>
+        <div class="footer-links">
+          <a href="#">About Studio</a>
+          <a href="#">Archive</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>Toshkent Uzbekistan</div>
+        <div>© 2024, All Rights Reserved</div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/js/post.js"></script>
+</body>
+</html>
