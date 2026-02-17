@@ -13,9 +13,9 @@
         <a class="brand" href="index.html">Zarif's Blog</a>
 
         <nav class="navlinks">
-          <a href="#" id="navCategories">Kategoriyalar</a>
-          <a href="#">Biz Haqimizda</a>
-          <a href="#">Biz Bilan Bo'laning</a>
+          <a href="index.html" id="navCategories">Kategoriyalar</a>
+          <a href="about.html">Men haqimda</a>
+          <a href="contact.html">Men bilan bog'laning</a>
         </nav>
 
         <div class="navright">
@@ -30,6 +30,8 @@
             <span>🌙</span>
             <div class="toggle" id="themeToggle" aria-label="toggle theme"></div>
           </div>
+
+          <button class="iconbtn hamburger" id="menuBtn" aria-label="menu" aria-expanded="false">☰</button>
         </div>
       </div>
 
@@ -37,15 +39,37 @@
         <div class="chips" id="categoryChips"></div>
       </div>
     </div>
+
+    <!-- Fullscreen Mobile Menu -->
+    <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+      <div class="menu-sheet" role="dialog" aria-modal="true">
+        <div class="sheet-handle"></div>
+      
+        <div class="sheet-header">
+          <div class="menu-title">Menu</div>
+          <button class="sheet-close" id="menuClose" aria-label="close">✕</button>
+        </div>
+      
+        <div class="sheet-links">
+          <a class="sheet-link" href="index.html" data-close>Blog</a>
+          <a class="sheet-link" href="about.html" data-close>Men haqimda</a>
+          <a class="sheet-link" href="contact.html" data-close>Men bilan bog'laning</a>
+        </div>
+      
+        <div class="sheet-footer">
+          <div class="menu-theme">
+            <span>Dark mode</span>
+            <div class="toggle" id="themeToggleMobile" aria-label="toggle theme"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main class="container">
     <section class="section">
       <h2 class="h2">Oxirgi blog postlari</h2>
-
-      <div class="featured" id="featuredWrap">
-        <!-- filled by JS -->
-      </div>
+      <div class="featured" id="featuredWrap"></div>
     </section>
 
     <section class="section">
@@ -65,9 +89,9 @@
       <div class="footer-top">
         <div class="brand">Zarif's Blog</div>
         <div class="footer-links">
-          <a href="#">About Studio</a>
-          <a href="#">Archive</a>
-          <a href="#">Contact Us</a>
+          <a href="about.html">Men haqimda</a>
+          <a href="index.html">Archive</a>
+          <a href="contact.html">Men bilan bog'laning</a>
         </div>
       </div>
       <div class="footer-bottom">

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Post detail — Zarif's Blog</title>
+  <title>Men bilan bog'laning — Zarif's Blog</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -19,11 +19,6 @@
         </nav>
 
         <div class="navright">
-          <form class="search" id="searchForm">
-            <span>🔎</span>
-            <input id="searchInput" type="search" placeholder="Qidirin" />
-          </form>
-
           <button class="iconbtn" title="Profile">👤</button>
 
           <div class="switch" title="Dark mode">
@@ -36,52 +31,43 @@
       </div>
     </div>
 
-   <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
-    <div class="menu-center">
-      <div class="menu-brand">Zarif's Blog</div>
+    <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+      <div class="menu-center">
+        <div class="menu-brand">Zarif's Blog</div>
     
-      <nav class="menu-links">
-        <a href="index.html" class="menu-link" data-close>Blog</a>
-        <a href="about.html" class="menu-link" data-close>Men haqimda</a>
-        <a href="contact.html" class="menu-link" data-close>Men bilan bog'laning</a>
-      </nav>
+        <nav class="menu-links">
+          <a href="index.html" class="menu-link" data-close>Blog</a>
+          <a href="about.html" class="menu-link" data-close>Men haqimda</a>
+          <a href="contact.html" class="menu-link" data-close>Men bilan bog'laning</a>
+        </nav>
     
-      <div class="menu-actions">
-        <div class="menu-theme">
-          <span>Dark mode</span>
-          <div class="toggle" id="themeToggleMobile" aria-label="toggle theme"></div>
+        <div class="menu-actions">
+          <div class="menu-theme">
+            <span>Dark mode</span>
+            <div class="toggle" id="themeToggleMobile" aria-label="toggle theme"></div>
+          </div>
+        
+          <button class="menu-close" id="menuClose" aria-label="close">✕</button>
         </div>
-      
-        <button class="menu-close" id="menuClose" aria-label="close">✕</button>
       </div>
     </div>
-  </div>
-
   </header>
 
   <main class="container">
-    <div class="breadcrumb" id="breadcrumb"></div>
-
     <section class="section">
-      <div class="detail-hero">
-        <article class="card" id="detailCard"></article>
+      <h2 class="h2">Men bilan bog'laning</h2>
 
-        <aside class="side">
-          <div class="card">
-            <div class="card-body">
-              <div class="meta">📌 Shu mavzuda postlar</div>
-              <div class="desc" style="margin-top:6px">Pastda shu kategoriya bo‘yicha postlar chiqadi.</div>
-            </div>
+      <div class="card">
+        <div class="card-body">
+          <p class="desc">Quyidagilar orqali bog'lanishingiz mumkin:</p>
+
+          <div style="margin-top:12px; display:grid; gap:10px;">
+            <div class="badge">📩 Email: example@mail.com</div>
+            <div class="badge">💬 Telegram: @username</div>
+            <div class="badge">📞 Telefon: +998 90 000 00 00</div>
           </div>
-
-          <div class="side" id="relatedWrap"></div>
-        </aside>
+        </div>
       </div>
-
-      <hr class="hr"/>
-
-      <h2 class="h2">Related postlar</h2>
-      <div class="grid" id="relatedGrid"></div>
     </section>
   </main>
 
@@ -92,7 +78,7 @@
         <div class="footer-links">
           <a href="about.html">Men haqimda</a>
           <a href="index.html">Archive</a>
-          <a href="contact.html">Men bilan bog'laning</a>
+          <a href="contact.html">Contact</a>
         </div>
       </div>
       <div class="footer-bottom">
@@ -103,6 +89,7 @@
   </footer>
 
   <script type="module" src="assets/js/pages.js"></script>
-  <script type="module" src="assets/js/post.js"></script>
+  <script type="module" src="assets/js/pages.js"></script>
+
 </body>
 </html>

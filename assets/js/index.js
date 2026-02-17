@@ -353,7 +353,56 @@ async function load() {
   renderPagination({ page: st.page, count: parsed.count, next: parsed.next, previous: parsed.previous }, pageSizeGuess);
 }
 
+function initMobileMenu() {
+  const overlay = document.getElementById("menuOverlay");
+  const btn = document.getElementById("menuBtn");
+  const close = document.getElementById("menuClose");
+
+  if (!overlay || !btn || !close) return;
+
+  const lockScroll = () => { document.documentElement.style.overflow = "hidden"; document.body.style.overflow = "hidden"; };
+  const unlockScroll = () => { document.documentElement.style.overflow = ""; document.body.style.overflow = ""; };
+
+  const openMenu = () => {
+    overlay.classList.add("open");
+    overlay.setAttribute("aria-hidden", "false");
+    lockScroll();
+    btn.setAttribute("aria-expanded", "true");
+  };
+
+  const closeMenu = () => {
+    overlay.classList.remove("open");
+    overlay.setAttribute("aria-hidden", "true");
+    unlockScroll();
+    btn.setAttribute("aria-expanded", "false");
+  };
+
+  btn.addEventListener("click", openMenu);
+  close.addEventListener("click", closeMenu);
+
+  // fon bosilsa yopiladi (sheetning o‘zi emas)
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) closeMenu();
+  });
+
+  overlay.querySelectorAll("[data-close]").forEach(a => {
+    a.addEventListener("click", () => closeMenu());
+  });
+
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && overlay.classList.contains("open")) closeMenu();
+  });
+
+  // Mobile theme toggle -> desktop toggle
+  const mobileToggle = document.getElementById("themeToggleMobile");
+  mobileToggle?.addEventListener("click", () => {
+    document.getElementById("themeToggle")?.click();
+  });
+}
+
+
 initTheme();
 initSearch();
+initMobileMenu();
 window.addEventListener("popstate", load);
 load();
