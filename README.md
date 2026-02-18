@@ -15,10 +15,10 @@ This project provides a clean, responsive UI and a powerful REST API for managin
 ## 📸 Screenshots
 
 ### 🖥 Desktop
-![Desktop Screenshot](screenshots/desktop.png)
+![Desktop Screenshot](screenshots/desktop1.png)
 
 ### 📱 Mobile
-![Mobile Screenshot](screenshots/mobile.png)
+![Mobile Screenshot](screenshots/mobile1.png)
 
 ---
 
