@@ -8,7 +8,7 @@ This project provides a clean, responsive UI and a powerful REST API for managin
 ## 🌐 Live Demo
 
 🔗 **Frontend:**  
-(https://6994494abc10cdda3512a6b8--helpful-bunny-76f1b4.netlify.app/)
+https://helpful-bunny-76f1b4.netlify.app/
 
 ---
 
